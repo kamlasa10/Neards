@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds-Catalog</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header  header-bg">
+    <div class="container">
+      <div class="row header-row">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="images/nerds-logo.svg" alt="Логотип">
+          </a>
+        </div>
+        <nav class="header__nav  nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Клиенты</a>
+            </li>
+            <li class="nav__item nav__item--current">
+              <span class="nav__current">Магазин</span>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user-block  user-block">
+          <a class="user-block__link  user-block__link--iconed" href="#">
+              <span class="user-block__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+              </span>
+            Корзина
+          </a>
+        </div>
+      </div>
+      <div class="header__title">
+        Магазин готовых шаблонов
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <section class="selling">
+      <div class="row sellign-row">
+          <form action="#" class="sellign__filter-form filter-form" method="post">
+            <div class="sellign__title">Стоимость:</div>
+            <div class="filter-form__range-filter range-filter">
+              <div class="filter-form__price-controls range-controls">
+                <div class="range-controls__slider">
+                  <div class="range-controls__slide--green"></div>
+                  <div class="range-controls__controls range-controls__controls-min"></div>
+                  <div class="range-controls__controls range-controls__controls-max"></div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-form__price-controls price-controls">
+              От <input class="price-controls__input price-controls__min" type="text" value="0">
+              До <input class="price-controls__input price-controls__max" type="text" value="15000">
+            </div>
+            <div class="filter-form__filter-choise filter-choise">
+              <div class="filter-choise__title">Сетка:</div>
+              <label class="filter-choise__text  filter-choise__text-radio">
+                <input class="filter-choise__radio" type="radio" name="grid" checked>
+                <span class="filter-choise__indicator-radio"></span>
+                Адаптивная
+              </label>
+              <label class="filter-choise__text filter-choise__text-radio">
+                <input class="filter-choise__radio" type="radio" name="grid">
+                <span class="filter-choise__indicator-radio"></span>
+                Фиксированная
+              </label>
+              <label class="filter-choise__text filter-choise__text-radio">
+                Резиновая
+              </label>
+            </div>
+            <div class="filter-choise">
+              <div class="filter-choise__title">Особенности:</div>
+              <label class="filter-choise__text  filter-choise__text-checkbox ">
+                <input class="filter-choise__checkbox" type="checkbox" name="slider" checked>
+                <span class="filter-chose__indicatior-checkbox"></span>
+                Слайдер
+              </label>
+              <label class="filter-choise__text  filter-choise__text-checkbox">
+                <input class="filter-choise__checkbox" type="checkbox" name="slider">
+                <span class="filter-chose__indicatior-checkbox"></span>
+                Блок преимуществ
+              </label>
+              <label class="filter-choise__text  filter-choise__text-checkbox">
+                <input class="filter-choise__checkbox" type="checkbox" name="slider">
+                <span class="filter-chose__indicatior-checkbox"></span>
+                Новости
+              </label>
+              <label class="filter-choise__text filter-choise__text-checkbox">
+                <input class="filter-choise__checkbox" type="checkbox" name="slider">
+                <span class="filter-chose__indicatior-checkbox"></span>
+                Галерея
+              </label>
+              <label class="filter-choise__text filter-choise__text-checkbox">
+                <input class="filter-choise__checkbox" type="checkbox" name="slider">
+                <span class="filter-chose__indicatior-checkbox"></span>
+                Корзина
+              </label>
+            </div>
+            <input  class="filter-form__btn" type="submit" value="Показать">
+          </form>
+          <div class="sourting-product">
+            <div class="row sourting-row">
+              <div class="sellign__title">
+                Сортировать:
+              </div>
+              <div class="sellign__sorting sorting">
+                <a class="sorting__link " href="#">По цене</a>
+                <a class="sorting__link sorting-link--active" href="#">По типу</a>
+                <a class="sorting__link sorting-link--active" href="#">По названию</a>
+              </div>
+            </div>
+            <div class="row sourting-product-row">
+              <div class="sellign__product sellign-product">
+                  <div class="sellign-product__browser browser">
+                    <svg class="browser-img" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                  </div>
+                  <img src="images/sellign-product.jpg" width="360" height="576" alt="Продукт">
+                  <div class="sellign-product__about-product about-product">
+                    <div class="about-product__title">Sedona</div>
+                    <div class="about-product__desc">Информационный сайт для туристов</div>
+                    <a class="about-product__btn btn" href="#">9 900 руб.</a>
+                  </div>
+              </div>
+              <div class="sellign__product sellign-product">
+                <div class="sellign-product__browser browser">
+                  <svg class="browser-img" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                </div>
+                <img src="images/selllign-product-2.jpg" width="360" height="576" alt="Продукт-2">
+                <div class="sellign-product__about-product about-product">
+                  <div class="about-product__title">Pink</div>
+                  <div class="about-product__desc">Продуктовый лендингприложения для iOS и Android</div>
+                  <a class="about-product__btn btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="sellign__product sellign-product">
+                <div class="sellign-product__browser browser">
+                  <svg class="browser-img" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                </div>
+                <img src="images/sellign-product-3.jpg" width="360" height="576" alt="Продукт-3">
+                <div class="sellign-product__about-product about-product">
+                  <div class="about-product__title">Barbershop</div>
+                  <div class="about-product__desc">Сайт салоны красоты.Для мужчин, да.</div>
+                  <a class="about-product__btn btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="sellign__product sellign-product">
+                <div class="sellign-product__browser browser">
+                  <svg class="browser-img" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                </div>
+                <img src="images/sellign-product-4.jpg" width="360" height="576" alt="Продукт-3">
+                <div class="sellign-product__about-product about-product">
+                  <div class="about-product__title">Mishka</div>
+                  <div class="about-product__desc">Интернет-Магазин вязаные игрушки.</div>
+                  <a class="about-product__btn btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="sellign__product sellign-product">
+                <div class="sellign-product__browser browser">
+                  <svg class="browser-img" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                </div>
+                <img src="images/sellign-product-5.jpg" width="360" height="576" alt="Продукт-3">
+                <div class="sellign-product__about-product about-product">
+                  <div class="about-product__title">A Plus</div>
+                  <div class="about-product__desc">Лендинг укрсов повышеия квалификации</div>
+                  <a class="about-product__btn btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="sellign__product sellign-product">
+                <div class="sellign-product__browser browser">
+                  <svg class="browser-img" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                </div>
+                <img src="images/sellign-product-6.jpg" width="360" height="576" alt="Продукт-3">
+                <div class="sellign-product__about-product about-product">
+                  <div class="about-product__title">Кваст</div>
+                  <div class="about-product__desc">Промо-сайт призводителя крафтого кваса</div>
+                  <a class="about-product__btn btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <span class=" pagination__link--current">1</span>
+                </li>
+                <li class="pagination__item">
+                  <a href="" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <button type="button"  class="pagination__next-btn">Следующая</button>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="map map-mt">
+    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d840.3156308665027!2d30.323677501909717!3d59.93846980511647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JEuINCa0L7QvdGO0YjQtdC90L3QsNGPLCDQtC4gMTkvOA!5e0!3m2!1suk!2sru!4v1505422223155" height="450"></iframe>
+    <div class="container map__container">
+      <div class="write-us">
+        <div class="write-us__title">
+          NЁRDS DESIGN STUDIO
+        </div>
+        <div class="write-us__adress">
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </div>
+        <div class="write-us__tel">
+          тел. +7 (812) 275-75-75
+        </div>
+        <a class="write-us__btn btn" href="write-us.html">Напишите нам</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer footer-mt">
+    <div class="container">
+      <div class="row footer-row">
+        <div class="footer__social social">
+          <a class="social__link social__link--vk" href="#" title="Вконтаке"></a>
+          <a class="social__link social__link--fb" href="#" title="Фейсбук"></a>
+          <a class="social__link social__link--inst" href="#" title="Инстаграм"></a>
+        </div>
+        <div class="footer__discount">
+          <div class="discount__title">
+            Давайте дружить, это выгодно!
+          </div>
+          <div class="discount__desc">
+            Скидка 10% для друзей из социальных сетей.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal modal-write-us">
+    <button class="modal-write-us__close" type="button" title="Закрыть">Закрыть</button>
+    <form  class="modal-write-us__form" method="get" action="#">
+      <div class="modal-write-us__title">
+        Напишите нам
+      </div>
+      <div class="row write-us-row">
+        <div class="write-us__left">
+          <label class="modal-write-us__input-title" for="user-name">Ваше Имя:</label>
+          <input class="modal-write-us__input-custom modal-write-input" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="write-us__right">
+          <label class="modal-write-us__input-title" for="email">Ваш e-mail:</label>
+          <input class="modal-write-us__input-custom" type="email" id="email" placeholder="Для отправки ответа">
+        </div>
+      </div>
+      <label class="modal-write-us__input-title modal-write-mt" for="text-field">Текст письма</label>
+      <textarea class="modal-write-us__textarea" id="text-field" placeholder="В свободной форме"></textarea>
+      <input  class="modal-write-us__btn btn" type="submit" value="Отправить">
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
